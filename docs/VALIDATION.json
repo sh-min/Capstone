@@ -1,0 +1,66 @@
+{
+  "source_repository": "https://github.com/wplso/xArm-model-training",
+  "source_commit": "2fdaa693e3aaafe3a221f5a775a12bc340f4d562",
+  "selected_cycles": 1159,
+  "development_cycles": 1069,
+  "test_cycles": 90,
+  "quality_counts": {
+    "valid": 1159
+  },
+  "base24_parity_cycles": 1159,
+  "base24_max_absolute_error": 0.0,
+  "optional_missing_counts": {
+    "ID1_3_5s_IQR": 0,
+    "S3_current_mean": 0,
+    "S4_current_mean": 0,
+    "S5_current_mean": 0
+  },
+  "unit_and_inference_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 21,
+    "failed": 0,
+    "real_estimator_fit_blocked": true
+  },
+  "archived_model_replay": {
+    "n": 90,
+    "stored_threshold_alarms": {
+      "normal": 3,
+      "B82": 23,
+      "C182": 23
+    },
+    "candidate_040_alarms": {
+      "normal": 6,
+      "B82": 26,
+      "C182": 28
+    }
+  },
+  "new_model_training_executed": false,
+  "new_model_training_and_performance_verified": false,
+  "training_command": "python -m capstone train --data data/prepared --out runs/v1",
+  "code_sha256": {
+    "__init__.py": "8f8801b1320b661158499d929a7b7211222e66e2ebb63ef9bd67b647360868f8",
+    "__main__.py": "1767b2e7416544e31923cc58f509bd22dd45c64294738f2651c6b9a3ec180e74",
+    "evaluate.py": "f261203d68d3a80374d46911ac695e3f87a0b60ff483de2a409b230dbe5184c5",
+    "features.py": "bff3d3bd720b5b42d93ce8dc3e406a97b7b14576577974f5c8cb125d0ada7665",
+    "io.py": "65a6529c8d270bda5e3a40c800c7841492a5509aa028263ec4933afd9a770115",
+    "metrics.py": "a6eee8efb9d02ca132eacb0d0d6d2f14d4fd3a327fa6d529489d7c6f5e9bfca7",
+    "model.py": "5ff78a32754ff6bb29c6764ff89f9df9193d446bedb3aa62adca7c8836397bdb",
+    "prepare.py": "7f2c13d128df4a8b190723861e1428e565612964616d32e2fc12c3c1489a5f48",
+    "schema.py": "1ae756368219aabf498fafa283f52b1a69e478cf64a6b2f7dc0d77b848c72e11",
+    "source.py": "2d9cf90f7f24321c43dac51325ccd0ae2180a0f04391844bdff2e124c9d985b6",
+    "train.py": "120de7bda2ba592c30a15fbd6c5767cb66561786e5967a947b8b0cd563310181"
+  },
+  "test_code_sha256": "4e2192789c7ef3846c6fe9bdca08b86c09ac683093426849590b631547895795",
+  "environment": {
+    "python": "3.13.15",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.8.0"
+  },
+  "validation_stage": "Implementation validation before the user executed training",
+  "subsequent_user_run": "experiments/v1/metadata.json"
+}

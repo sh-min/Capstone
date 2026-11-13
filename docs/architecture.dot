@@ -1,0 +1,40 @@
+digraph Capstone {
+  graph [rankdir=TB, bgcolor="#f8fafc", pad="0.35", nodesep="0.36", ranksep="0.50", fontname="Noto Sans CJK KR", fontsize=21, labelloc=t, label="Capstone v1 · 학습과 평가 구조"];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK KR", fontsize=12, color="#cbd5e1", fillcolor="#ffffff", margin="0.20,0.14"];
+  edge [color="#64748b", arrowsize=0.7, fontname="Noto Sans CJK KR", fontsize=10];
+
+  raw [label="기존 공개 원시 데이터\n전류·전압 / 가속도 / 서보 위치\n볼트 장착 42세션 · 1,159회", fillcolor="#e2e8f0"];
+  features [label="No.3 구간 분리 · 품질 확인\n기존 24개 특징 / 기존 구간 전류를 더한 27개\n1,159회 기본 특징 원본과 일치", fillcolor="#e2e8f0"];
+  raw -> features;
+  dev [label="개발 자료 1,069회\n11/6 · 11/10 · 11/11", fillcolor="#dbeafe", color="#60a5fa"];
+  test [label="고정 시험 자료 90회\n11/12 · 정상/B82/C182 각 30회\nA121 없음", fillcolor="#fef3c7", color="#f59e0b"];
+  features -> dev;
+  features -> test;
+
+  subgraph cluster_selection {
+    label="Capstone에서 새로 구성한 비교·선택 절차";
+    fontname="Noto Sans CJK KR"; fontsize=13; color="#0d9488"; style="rounded"; bgcolor="#f0fdfa";
+    folds [label="날짜별 3분할\n하루 전체를 검증, 나머지 날짜로 학습\n대치·표준화는 학습 분할에만 적합", fillcolor="#ccfbf1"];
+    logistic [label="로지스틱 회귀\nC = 0.1 / 1 / 10\n각각 24개·27개 특징", fillcolor="#ffffff"];
+    boosting [label="HistGradientBoosting\n최대 잎 수 = 7 / 15\n각각 24개·27개 특징", fillcolor="#ffffff"];
+    oof [label="총 10개 후보의 날짜 제외 예측\n모델·특징·임계값을 함께 선택\nJ = 정상 판정률과 유형별 탐지율에 각각 50%", fillcolor="#ccfbf1"];
+    folds -> logistic;
+    folds -> boosting;
+    logistic -> oof;
+    boosting -> oof;
+  }
+  dev -> folds;
+  selected [label="실제 v1 선택 결과\n로지스틱 · 24개 특징 · C=10\n임계값 0.09", fillcolor="#ede9fe", color="#8b5cf6"];
+  refit [label="선택한 설정으로 개발 1,069회 전체 학습\n전처리·모델·임계값 고정\nmodel.joblib", fillcolor="#ede9fe", color="#8b5cf6"];
+  oof -> selected;
+  selected -> refit;
+  infer [label="고정 모델 추론\n시험 자료로 재학습·임계값 조정 없음", fillcolor="#ffffff"];
+  refit -> infer;
+  test -> infer [label="평가 전용", color="#d97706"];
+  baseline [label="동일 절차 C=1 로지스틱\n기존 동결 V4 PCA / 로지스틱\n기존 임계값·0.40 비교", fillcolor="#e2e8f0"];
+  results [label="같은 90회에서 비교\n정상 오탐 13/30 · 하중 탐지 59/60\n선택 모델 J=0.775 / 기존 0.40 모델 J=0.850", fillcolor="#fff7ed", color="#fb923c"];
+  infer -> results;
+  baseline -> results [label="고정 비교"];
+  note [shape=note, label="범례: 회색 = 기존 데이터·정의·기준선\n청록 = 새 실험 절차 / 보라 = 실제 선택 모델\n기존 알고리즘을 활용한 새 비교 실험이며\n새 학습 알고리즘의 발명이나 성능 개선을 뜻하지 않음", fillcolor="#ffffff", fontsize=10];
+  results -> note [style=invis];
+}

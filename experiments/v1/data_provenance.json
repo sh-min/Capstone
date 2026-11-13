@@ -1,0 +1,742 @@
+{
+  "source_repository": "https://github.com/wplso/xArm-model-training",
+  "source_commit": "2fdaa693e3aaafe3a221f5a775a12bc340f4d562",
+  "source_files": {
+    "models/bolt-known-load/abc-interleaved/frozen_evaluation/CYCLE_FEATURES.csv": {
+      "sha256": "c5d71f62d829e7829b35c69efee825510c5606e91334efebe6cd51e191360064",
+      "bytes": 299160,
+      "lfs": true
+    },
+    "models/bolt-known-load/bc-independent/CYCLE_FEATURES.csv": {
+      "sha256": "ea51eb05fda076b5b0d0532dd3e92d25a092b92ced71f1f161192b56bf74d8fb",
+      "bytes": 151573,
+      "lfs": true
+    },
+    "models/bolt-known-load/bc-independent/CYCLE_SCORES.csv": {
+      "sha256": "de4827058b22d505f99592e9851aafd2b9d79b0287ea1614bf921df261b27c75",
+      "bytes": 28110,
+      "lfs": true
+    },
+    "models/bolt-known-load/prospective/models/V4_PCA_Q.joblib": {
+      "sha256": "86d85e072d656fe8dd4df47b096c5d80565bf44ccd48dbc94175d75c359f7f3e",
+      "bytes": 18105,
+      "lfs": true
+    },
+    "models/bolt-known-load/retrain/retrained_bolt_normal/NEW_NORMAL_FEATURES.csv": {
+      "sha256": "ba4a6c84ce46f3affad193a107e7e6d57a21f1c81845d935e6d20d209f2038ff",
+      "bytes": 397909,
+      "lfs": true
+    },
+    "models/bolt-known-load/retrain/retrained_bolt_normal/models/LOGISTIC_BOLT_NORMAL_EXPANDED.joblib": {
+      "sha256": "d13f356a01973a4fbb188396301b9c98f9062a36d24d35b7421031907bde548d",
+      "bytes": 16870,
+      "lfs": true
+    },
+    "models/model_runtime/normal_models.py": {
+      "sha256": "c9e66cef195fca1234279610df484a92e6696205b62224a704d48edaf496c284",
+      "bytes": 10006,
+      "lfs": false
+    },
+    "models/v5.1/CYCLE_FEATURES.csv": {
+      "sha256": "afec5d528956bdbd01f01cdce4b1b1499ad455d438fb0e7121a613b0b0265e44",
+      "bytes": 1640027,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/CYCLE_MANIFEST.csv": {
+      "sha256": "b5d3c6562aae7bff52f139e78016f9693aa73010b1bbf5514a6c80a7b75e3885",
+      "bytes": 510418,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/1e7a19832cc24b9e881584ad41fa251f/adxl345_1.csv": {
+      "sha256": "6aad50b3771d23814d6c02af36bbd2377fa58785c12ac7141005cdb051be3d92",
+      "bytes": 13083022,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/1e7a19832cc24b9e881584ad41fa251f/measurements.csv": {
+      "sha256": "acdeb240cc7ef7654f20a38e7e9312fe98fe718474ec9a38f06b45f1c4349554",
+      "bytes": 1419870,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/1e7a19832cc24b9e881584ad41fa251f/single_queries.csv": {
+      "sha256": "f8ebbb299c042073b417118623b0876dc0a4f8f01c976ce589b5a7d6c9e96bd1",
+      "bytes": 1275602,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/2c8907b68c8c4054962efdceff6cca87/adxl345_1.csv": {
+      "sha256": "16c111ad355785e51ece8689666c71a0bdd7000b9b4be50f029e76d338e911f9",
+      "bytes": 22002527,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/2c8907b68c8c4054962efdceff6cca87/measurements.csv": {
+      "sha256": "7b35b1f5f5bf25b05d3e730613531be80573a5b40160a38ff56df97b46f6cf77",
+      "bytes": 2401929,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/2c8907b68c8c4054962efdceff6cca87/single_queries.csv": {
+      "sha256": "bc1ef24ba7ad2f99602bbe95fee0959fcc8dc1bf44eafc7ff97fe871ddc8d92a",
+      "bytes": 2147196,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/329201426ab14ce9aef2c26699f0d37c/adxl345_1.csv": {
+      "sha256": "1df1e068871e6f3a5df06690394db2aaaaff2ede50dc9c33afd66ceec84bfcfc",
+      "bytes": 21978730,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/329201426ab14ce9aef2c26699f0d37c/measurements.csv": {
+      "sha256": "d625fd488e8b34b4f513698cdd6410ab410b0bef5d660cfa1cd7552b9d42d50b",
+      "bytes": 2411448,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/329201426ab14ce9aef2c26699f0d37c/single_queries.csv": {
+      "sha256": "ed73dbbc34a9c6eafdbf0e0a8e05245d067a0c53f4497836adfc09491313b833",
+      "bytes": 2142396,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/3cfc83a5b76948c6a8c8ead0647d9c73/adxl345_1.csv": {
+      "sha256": "59b31a481e92cdb243a31bf8a166d9181dc217255248c6b7c144643ff025be79",
+      "bytes": 17612771,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/3cfc83a5b76948c6a8c8ead0647d9c73/measurements.csv": {
+      "sha256": "d8ae7cf393c1136bcba7bdf6406e5328a17c2335fa46d50747a1ba00a07139e5",
+      "bytes": 1895560,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/3cfc83a5b76948c6a8c8ead0647d9c73/single_queries.csv": {
+      "sha256": "cdc6908c24e968f8c782fe805b633a543f56f77574d77390027fed39356b336e",
+      "bytes": 1710565,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/4932f810f5be4739ae33361f368c77fc/adxl345_1.csv": {
+      "sha256": "deda7f7ee26010277787b88c6a937c590b9f47869c08b445f3ba24077350e3c0",
+      "bytes": 13092690,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/4932f810f5be4739ae33361f368c77fc/measurements.csv": {
+      "sha256": "41f564380f9fd33ff4f177fe5e179c9daaa03dd4d0675d069480c336ba53e3af",
+      "bytes": 1420109,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/4932f810f5be4739ae33361f368c77fc/single_queries.csv": {
+      "sha256": "9b4afa4d5cd0c9b23ce403af5327fd2d87c6ec314d90eae3a09310bde6adfb92",
+      "bytes": 1275765,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/4d4c7737340641cf844bb9dfaca52134/adxl345_1.csv": {
+      "sha256": "9e8c9df10ed7ae6028fe2868dd3ae9b0cea7e60e0885f78fb2b0094972a4b073",
+      "bytes": 21918863,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/4d4c7737340641cf844bb9dfaca52134/measurements.csv": {
+      "sha256": "d71161483bc96a70ea6d1de31ae6a3ac20ccca3d75751f6e43e0b1372845e8e0",
+      "bytes": 2404831,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/4d4c7737340641cf844bb9dfaca52134/single_queries.csv": {
+      "sha256": "7afa166acceb0fe42948bf0e0aeb94cc591f5e4545ee00a70e0cd7e8ede0f2e5",
+      "bytes": 2150096,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/4e725922442b43fc82d5553d944c5508/adxl345_1.csv": {
+      "sha256": "0828cb7834c9da0ed1c2c3562689c95b4b8a1bc8fa2d1df07d94f355f7a4ca03",
+      "bytes": 13171439,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/4e725922442b43fc82d5553d944c5508/measurements.csv": {
+      "sha256": "c65ec5cd726902945e36bcb38616949a0c321937bdbd6cface8c913b48df1903",
+      "bytes": 1421752,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/4e725922442b43fc82d5553d944c5508/single_queries.csv": {
+      "sha256": "b97522c7972a06515a137580409d9b98f5c993b6f87fb94fcfe6b5204f8b3ff7",
+      "bytes": 1275817,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5527d5f00cbc48a6bf2217496b010d6c/adxl345_1.csv": {
+      "sha256": "cd7b2bbd5f037a03b3db4e3f14046534386f305e6b1a4be387ee032f973277da",
+      "bytes": 16992495,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5527d5f00cbc48a6bf2217496b010d6c/measurements.csv": {
+      "sha256": "0484fbe7bddbb838e6c7601dda8499802856a755fb5648c79c294b5775078459",
+      "bytes": 1861219,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5527d5f00cbc48a6bf2217496b010d6c/single_queries.csv": {
+      "sha256": "b567f2bb3013762d79396a6e6ec9c2a86e74ecdfd193ff8500f0a717f68302fd",
+      "bytes": 1713516,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5ce57cd6ef0840aaac656023d2ef39e4/adxl345_1.csv": {
+      "sha256": "073c83ce4bc949d2f270a449f8c215c4f1eb4af2cd2d7b5ea4ff95f40bb8f207",
+      "bytes": 22034648,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5ce57cd6ef0840aaac656023d2ef39e4/measurements.csv": {
+      "sha256": "bca84c69c9e2f8ae5db9e6146442a4eea1d95efb0ad102eaeaff50d462609066",
+      "bytes": 2413457,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5ce57cd6ef0840aaac656023d2ef39e4/single_queries.csv": {
+      "sha256": "80a52912ef195d9fe75a848c1938e4e0740fb5f403f643f81b742d9eb9cd1366",
+      "bytes": 2162402,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5d3a460dbca841a397ab358522d19bef/adxl345_1.csv": {
+      "sha256": "825a2f3debc62b13c5128bd80ee1103eee19ce650516e39d61ec2878c7d04351",
+      "bytes": 21912372,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5d3a460dbca841a397ab358522d19bef/measurements.csv": {
+      "sha256": "2f456be9fbd6be7fa7ce728460b8ef047705d3864e30ccc4ea6230cdbf8cb224",
+      "bytes": 2402415,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5d3a460dbca841a397ab358522d19bef/single_queries.csv": {
+      "sha256": "0ead95a0692d41270362c624815a25f47eb4a5afdcf1c7dbb8e8a2859c4f93e4",
+      "bytes": 2148663,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5d7eb48165e646138138f9572389072c/adxl345_1.csv": {
+      "sha256": "aa7fe27f6be497e4ee5d9a5007cd075a35daf17c232c9dbe1e8c07ac5e8d85f5",
+      "bytes": 5694957,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5d7eb48165e646138138f9572389072c/measurements.csv": {
+      "sha256": "d0cebe651d93af755d4e056b5428efc7964dd9812b75d6c819a61fc6716b9156",
+      "bytes": 623647,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5d7eb48165e646138138f9572389072c/single_queries.csv": {
+      "sha256": "b112b137e9c953403137865852ab26d7799642f7c4620a6f5d44bf45d1dafaf9",
+      "bytes": 555708,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5ea690eab5f34a8b8783231c52412a90/adxl345_1.csv": {
+      "sha256": "c49d67392afa9c3b9164c9130d96ea58979aec58a05fa7550c61fa1d0301f447",
+      "bytes": 4464223,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5ea690eab5f34a8b8783231c52412a90/measurements.csv": {
+      "sha256": "59fc8ba7513239803e50db0dfadc60d8bac0b0250045171fc6de5e8af9235e13",
+      "bytes": 483418,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/5ea690eab5f34a8b8783231c52412a90/single_queries.csv": {
+      "sha256": "e83ef9de9db68c3a1c8c3de91d3ac521d4511cca62240f5e0856cb2b2ef0d41b",
+      "bytes": 424277,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/9dbf1c1031fb486eb91b08dca5a87545/adxl345_1.csv": {
+      "sha256": "e6c3f9e31cd7e3949d3ebcfe2b9b81a6441340cb0a32aa4ae524e2283863bfcc",
+      "bytes": 21813284,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/9dbf1c1031fb486eb91b08dca5a87545/measurements.csv": {
+      "sha256": "3076d396d8a450327db90eaf1b2742d29afafe5b9c29e9a7b35a97c07f98a4e6",
+      "bytes": 2401757,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/9dbf1c1031fb486eb91b08dca5a87545/single_queries.csv": {
+      "sha256": "777a63bf6804d535300db6688be4f24ce030e8839986d307241ef97496c773a9",
+      "bytes": 2148470,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/ae281a629cdb479885667a2d37fb42f4/adxl345_1.csv": {
+      "sha256": "b55d4f5d7740805740688cdaf157042d854c94ec2a9c55e239861b70ee643e18",
+      "bytes": 4473932,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/ae281a629cdb479885667a2d37fb42f4/measurements.csv": {
+      "sha256": "5bf1a93055295d7b97d290d3915fc45233c89125f1a67a0e0e6f4420923ba491",
+      "bytes": 484334,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/ae281a629cdb479885667a2d37fb42f4/single_queries.csv": {
+      "sha256": "c82fdab32aa07234ac29a5fdc01695c3defb5a75d3194c2e92721a375b70beda",
+      "bytes": 427370,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/b388b7c0ddf34166a19891706c425842/adxl345_1.csv": {
+      "sha256": "b9fee20ca591b19c934058adc5c656a258ce377b1e19cf61b9d16359786d70b6",
+      "bytes": 21929146,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/b388b7c0ddf34166a19891706c425842/measurements.csv": {
+      "sha256": "8c20adf3bccd5123a32fef9e298a7e22473236a0ae488cb007b985fefb7382b3",
+      "bytes": 2407943,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/b388b7c0ddf34166a19891706c425842/single_queries.csv": {
+      "sha256": "1a6db6d5479e0f2f1f99029f09373f309f32d463366d0de3e88f9341dedc8bb4",
+      "bytes": 2133296,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/d165b3c9fdae455b9c6bdd2719ac2b2a/adxl345_1.csv": {
+      "sha256": "71c9f530a2ce5901bf7d8369719968ad10aef7f5b6686d78974f4e1d203465ae",
+      "bytes": 21556018,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/d165b3c9fdae455b9c6bdd2719ac2b2a/measurements.csv": {
+      "sha256": "f068cafa82ce472007acbe6063c62060f043b4459e9c4ffecbbd93363fd44991",
+      "bytes": 2360873,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/d165b3c9fdae455b9c6bdd2719ac2b2a/single_queries.csv": {
+      "sha256": "a3a941da39ee19bfb96f1970d6399a4237c9088cb69c718af424883112ed7e6b",
+      "bytes": 2116438,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/ef9af82806b948e683f8de55097004a3/adxl345_1.csv": {
+      "sha256": "784331745278e2b871b699d727baebd3fa92f2d30f626815ba22c754b857fab8",
+      "bytes": 13211420,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/ef9af82806b948e683f8de55097004a3/measurements.csv": {
+      "sha256": "99408f4750fcebf9870fa66be5feacae76791681a0d684d4de09b21580cafdec",
+      "bytes": 1433651,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/ef9af82806b948e683f8de55097004a3/single_queries.csv": {
+      "sha256": "ddbdb01fa0cc1848ca171b5722d43871a0bdb58bc9ba6cde39928deb6f45d8ac",
+      "bytes": 1293990,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/f6d4576e8e4646a48cf4d9df0ed2b71a/adxl345_1.csv": {
+      "sha256": "28307fdcc4ea45c4010102e8c68693facdf7111d5aef76e76963952dafc24caf",
+      "bytes": 7473733,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/f6d4576e8e4646a48cf4d9df0ed2b71a/measurements.csv": {
+      "sha256": "64198ca7d97d468f54df6ad0fbe60254d7a5b7a4d040bb6f332e2d62a7fce40d",
+      "bytes": 822111,
+      "lfs": true
+    },
+    "원본 수집 데이터/V4_V51_보완원시/sessions/f6d4576e8e4646a48cf4d9df0ed2b71a/single_queries.csv": {
+      "sha256": "4af7c84e23e4737c1ea90e665f51591b84e9d40c7dfb0b56bf0f19cdc02a9d48",
+      "bytes": 732214,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/CYCLE_MANIFEST.csv": {
+      "sha256": "5bdc9b9a291a001079023e18af3c865c3bd791e76773fe50329babd54a5d1baa",
+      "bytes": 263405,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/082816020158408d83afa1b30dfb59c8/adxl345_1.csv": {
+      "sha256": "11dfea7b53ac8a22a0ed6f46065c81bd053998b457bd1584ad2d0fef46a21700",
+      "bytes": 26754313,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/082816020158408d83afa1b30dfb59c8/measurements.csv": {
+      "sha256": "c939602e8893f3363353127c0e8c849adab5964e9783de26a92d38c52ba2375d",
+      "bytes": 2893065,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/082816020158408d83afa1b30dfb59c8/single_queries.csv": {
+      "sha256": "42529e534f9dc558d8e8de7c2b24be1c65e9bddabd03d1726aeaf35f5e43c7e3",
+      "bytes": 2573979,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/09e617ceff8245b2892909e3fbe021f5/adxl345_1.csv": {
+      "sha256": "2a4d762c72e8c4ea58799b15a3e93727585e8d2092a2abec25d368960f8ea130",
+      "bytes": 6653105,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/09e617ceff8245b2892909e3fbe021f5/measurements.csv": {
+      "sha256": "3c70b5e80420b93dc260554cbc59fb4a5d9996a7c681d215c4d5047d42f42464",
+      "bytes": 718227,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/09e617ceff8245b2892909e3fbe021f5/single_queries.csv": {
+      "sha256": "5942e8a37a5d48220e85a3be8cd50d94a47a7766fe5bdcbc9cd040844642616e",
+      "bytes": 640225,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/218291a286ac4fdba254efabdaa17713/adxl345_1.csv": {
+      "sha256": "815c5e91fad49788c279ef9ce4400d905a6cb7bc6d76b75c0ee2f5f5916c7017",
+      "bytes": 6647783,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/218291a286ac4fdba254efabdaa17713/measurements.csv": {
+      "sha256": "813c629735ba99ca8cf6b2524feca6b5f9b6c8205469d4787c67130e33094e9b",
+      "bytes": 721574,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/218291a286ac4fdba254efabdaa17713/single_queries.csv": {
+      "sha256": "75fdb9c4f25a729d65609f6e66f9b458585fc803a23a6bcd622dad75705db5fc",
+      "bytes": 641782,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/2eff39d0d4174ebfa04c352a222f6768/adxl345_1.csv": {
+      "sha256": "5bfbec77dbf62ad96d649b783a9978296f15cd3f54901261d05c9d6a91174c7b",
+      "bytes": 6692560,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/2eff39d0d4174ebfa04c352a222f6768/measurements.csv": {
+      "sha256": "4abe0eaf369dbdb0f8b4fabdaf9733c9acc3a0afef38e4d89c56a3906b142da1",
+      "bytes": 729188,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/2eff39d0d4174ebfa04c352a222f6768/single_queries.csv": {
+      "sha256": "002d41fc8dbbf782ee371269a4caf207df6bf99f3edaef7c7dcd6b1c00720d59",
+      "bytes": 635567,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/36f95215531a4ace89b508fee4077c10/adxl345_1.csv": {
+      "sha256": "bf6dd7a4c34ac4a2fe2fbcdb054f5ba23dcda39b8cdd18b01e0fab9053b077d7",
+      "bytes": 26909768,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/36f95215531a4ace89b508fee4077c10/measurements.csv": {
+      "sha256": "cb1dc24bd5b2f50310776e3377946af81bc9cd13201464621cbc2fd5c7449734",
+      "bytes": 2889843,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/36f95215531a4ace89b508fee4077c10/single_queries.csv": {
+      "sha256": "26d849a2ad20d9b7cc9969ed729166ede12c51d11295905046562bdb1b39c63c",
+      "bytes": 2569210,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/3cfef04109dd46dfaa2994d57df73242/adxl345_1.csv": {
+      "sha256": "41b0a0fb7f8a0c8ee1168ac0c0ad2a61fffeadd346fc8f392e9c5cb9c13c7d49",
+      "bytes": 4555092,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/3cfef04109dd46dfaa2994d57df73242/measurements.csv": {
+      "sha256": "5d9368127a1b7a632e5a059c88425be157a43929877f073ae960968171ef43a0",
+      "bytes": 495202,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/3cfef04109dd46dfaa2994d57df73242/single_queries.csv": {
+      "sha256": "e1b5e2e4d29fe03bb2f5b4b9dbf9b4c27b817a4faed52e0e417f22babaf07751",
+      "bytes": 430424,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/4412f559ad2f463ebdb1cd7da668c9df/adxl345_1.csv": {
+      "sha256": "8ed37bd293d46f6c4595f7fcf5d79e2bc235e16d5af7a9d89dec7f9a42cfbf98",
+      "bytes": 6645694,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/4412f559ad2f463ebdb1cd7da668c9df/measurements.csv": {
+      "sha256": "1e50582b59de62ba5b1ba23c496405b9c4e7520f928cfe4f7911ba6d1137d90c",
+      "bytes": 719346,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/4412f559ad2f463ebdb1cd7da668c9df/single_queries.csv": {
+      "sha256": "81feeb69d3866726a840868456288334b53db104ae36f55b3833c82567802e02",
+      "bytes": 640305,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/4da256fea75c4f1db4c6f28f745be428/adxl345_1.csv": {
+      "sha256": "b55b4772ce650c1a2772c561ee567ad1853d0a753f00918fc026e2dafaa6301f",
+      "bytes": 4471752,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/4da256fea75c4f1db4c6f28f745be428/measurements.csv": {
+      "sha256": "dda93f5861bba2c1a5586e0c5b3e3a703f534857696ee6f04de400ce884ef909",
+      "bytes": 482871,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/4da256fea75c4f1db4c6f28f745be428/single_queries.csv": {
+      "sha256": "8a273f76f1f4bdbcd5f9117e7205e7ad8503a6ad24fd3ae13d909b4bdb7acae4",
+      "bytes": 425722,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/509014c5a6ba47e0a115fcbcbbfa7ba9/adxl345_1.csv": {
+      "sha256": "57262577950fc6e0d19fdd6125a0d6983e7a079c887ce35d2bc226a15d007e91",
+      "bytes": 6664501,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/509014c5a6ba47e0a115fcbcbbfa7ba9/measurements.csv": {
+      "sha256": "4aeee22548215ede885c33d0c96f9a6413af92e2160fc78ac89a5c7727c73d9c",
+      "bytes": 720235,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/509014c5a6ba47e0a115fcbcbbfa7ba9/single_queries.csv": {
+      "sha256": "16512dab666d78c70704857de1163378c853480b54da14f86b49179910794c0d",
+      "bytes": 640152,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/6070c34a5c3d46f692660c4b188af1cf/adxl345_1.csv": {
+      "sha256": "d00f6bd813e4229f9b35663cf0f70ea1718a3065b263f5567bd2607e0720f457",
+      "bytes": 26544197,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/6070c34a5c3d46f692660c4b188af1cf/measurements.csv": {
+      "sha256": "c336a8fe5ede42c6521d6347a64ef6ea4b07f8c35fbc6fee8f689eae3fed5da8",
+      "bytes": 2883425,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/6070c34a5c3d46f692660c4b188af1cf/single_queries.csv": {
+      "sha256": "14cdc83606dc609fab2736b9da765c3449d9cada270a0e9c537fe7ec2deff451",
+      "bytes": 2561778,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/6385b3f1e9294c848396a785eac276cf/adxl345_1.csv": {
+      "sha256": "af85df789cc7ac550ae0cc67f310f300c0483dbef437e89df8ad21a80a5d053b",
+      "bytes": 4451523,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/6385b3f1e9294c848396a785eac276cf/measurements.csv": {
+      "sha256": "bb523a770bf7ecc3b8cb4960e290e754f5e631e287d74d3be1057d54506d94ff",
+      "bytes": 481413,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/6385b3f1e9294c848396a785eac276cf/single_queries.csv": {
+      "sha256": "a8c7247e310d998a0455e38897c59ce984fdcf5613c47f9adfc6b8d24b9a3640",
+      "bytes": 424249,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/6e0c874925624afd82f89e68a6023c5a/adxl345_1.csv": {
+      "sha256": "195955eeb11d91153fd47cf3786dc202f52c5d5a0e5746dfebf2c947a8e7d73b",
+      "bytes": 6634742,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/6e0c874925624afd82f89e68a6023c5a/measurements.csv": {
+      "sha256": "06b6ce25e992211c7e4cba78f57406560e65ebdbd35f25c8852bdd669c46bf9f",
+      "bytes": 717613,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/6e0c874925624afd82f89e68a6023c5a/single_queries.csv": {
+      "sha256": "28f9959d489eda5263f0be19d0dbbf2ce6bb94799a3d1d23bf4e07647117fa8f",
+      "bytes": 637117,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/81df6330f22549109e27039c8b5c9591/adxl345_1.csv": {
+      "sha256": "c16efd9e39e99d288310ea733e3226033feb837f8d2fc556605a433aee002264",
+      "bytes": 4542098,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/81df6330f22549109e27039c8b5c9591/measurements.csv": {
+      "sha256": "744ed57a836a6e5ea03a8a845a289bb015feef92b99db11a8ea14e16c90afb47",
+      "bytes": 495589,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/81df6330f22549109e27039c8b5c9591/single_queries.csv": {
+      "sha256": "e9d66fd95ead477c428962f31677a7fa91783f37f8b21ce3fda8dfcc8de01e48",
+      "bytes": 430332,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/844a2abc83e54c2fb3a2fb7890bfe33e/adxl345_1.csv": {
+      "sha256": "871579a050527d8fa43d0d57722b95dcccffc31f84073b838c6f3fe9c4b51540",
+      "bytes": 26781334,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/844a2abc83e54c2fb3a2fb7890bfe33e/measurements.csv": {
+      "sha256": "bb2cd2f31598ae81a3832437fb455d6e7925d505beba1598b4eb49ba3b84f8b8",
+      "bytes": 2881400,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/844a2abc83e54c2fb3a2fb7890bfe33e/single_queries.csv": {
+      "sha256": "0abaf2ee472443eaa2585ad7fe9d49dbb82010aea2d4ad0845bd28d553b7a7e4",
+      "bytes": 2560304,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/95439bfada424e93a618531aaa36e9b9/adxl345_1.csv": {
+      "sha256": "51884adc286493bd7f102a8a221c22f794ea613fe019898b38d41e9880db8e79",
+      "bytes": 6629582,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/95439bfada424e93a618531aaa36e9b9/measurements.csv": {
+      "sha256": "a7fa29e2b9e3c4a3b025eb6d1bf3652164e3e914a0c090c3c6fd5c2e6ce26c12",
+      "bytes": 719133,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/95439bfada424e93a618531aaa36e9b9/single_queries.csv": {
+      "sha256": "919128c8d6d080a6ad3698df40ad0dd72fed89ba868b4cf1a5701b24b77a39d1",
+      "bytes": 640084,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/a47dfce2200b49eea2c5f7335050785a/adxl345_1.csv": {
+      "sha256": "852b355b4ac56a385ec918c573b7e28698aeefa082f41fde071a08b0467e6758",
+      "bytes": 6739991,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/a47dfce2200b49eea2c5f7335050785a/measurements.csv": {
+      "sha256": "90a5fb8527c06023bc2fe530190ba061a85fef8289839c9b8b16c4cf9136badc",
+      "bytes": 732697,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/a47dfce2200b49eea2c5f7335050785a/single_queries.csv": {
+      "sha256": "a7588aaf2b57dfd28a30c080326ccb37bbc01e29d463fb539de600c8de531f4a",
+      "bytes": 640212,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/c672a7bdcc304c6cbfceedcd3a5335bf/adxl345_1.csv": {
+      "sha256": "0550df7ae764815c9572257fb8fc77d6153134ae8ffb5470e00d530bcfb6ab95",
+      "bytes": 13174473,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/c672a7bdcc304c6cbfceedcd3a5335bf/measurements.csv": {
+      "sha256": "c0198a97f28838254dc34fcee96cd9b3f03e88d3db828c238da8b9aacf2a9a74",
+      "bytes": 1427937,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/c672a7bdcc304c6cbfceedcd3a5335bf/single_queries.csv": {
+      "sha256": "98675adc28398f7a8efde8238a83693756f60726d8a8e069788112bfd4acbfdc",
+      "bytes": 1286191,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/c7f1b19507be444a900cec6670b3ba18/adxl345_1.csv": {
+      "sha256": "a96a3bfd7c6b3d6b106ac986bb79dd09d2be02cea222d77694d24d5fa4828c2f",
+      "bytes": 6703573,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/c7f1b19507be444a900cec6670b3ba18/measurements.csv": {
+      "sha256": "beaaf00006ff217f17d5ffff22f24a3e1bd4ddf7dc92d0e60d4d306a0e887f71",
+      "bytes": 729675,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/c7f1b19507be444a900cec6670b3ba18/single_queries.csv": {
+      "sha256": "848959dab2f695713110efe438fc76b9e9fc168e95aa8882215fb11828b8f0cf",
+      "bytes": 638721,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/cce374d7ff1449ceb3d186eaed2c2092/adxl345_1.csv": {
+      "sha256": "9e929de58575a770c96c54b095ec2cfed5551808d71acc148233a3bcbaf7ded9",
+      "bytes": 4467183,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/cce374d7ff1449ceb3d186eaed2c2092/measurements.csv": {
+      "sha256": "600c828eb3b76eaa6d2cdc396a5f2234c990ece5c9e036c34a26ae18f8e14b3d",
+      "bytes": 483632,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/cce374d7ff1449ceb3d186eaed2c2092/single_queries.csv": {
+      "sha256": "3202b5f843730f751a6445ee6cfc66899292f8079dd262d0fba8abe03c37bf92",
+      "bytes": 425831,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/d92b7931856243ae8429c689b2590e51/adxl345_1.csv": {
+      "sha256": "fc4b79bceb2c33ebe0e45fa8b934b5160dd360a23b37a997202b7ef90689488e",
+      "bytes": 4441726,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/d92b7931856243ae8429c689b2590e51/measurements.csv": {
+      "sha256": "922b110394876dd102746c7bbe587f13d74f4b85954a2a1c1f531c19e63ba4c7",
+      "bytes": 481648,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/d92b7931856243ae8429c689b2590e51/single_queries.csv": {
+      "sha256": "51ef17f5ec65de13d63ee182a028a85ef16af8036dabdd8fc80d6bc5ec1d5641",
+      "bytes": 422844,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/dc2f9834f14443118c7797f57e01a961/adxl345_1.csv": {
+      "sha256": "bcb7619f4ec63c78bea3f6ac60f94b5cb29dbabddc045066f9807d503d459b4e",
+      "bytes": 4455231,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/dc2f9834f14443118c7797f57e01a961/measurements.csv": {
+      "sha256": "092a9c9b2c086db8dfac0d0ff949c2b45b00b458811346b7be85bcebd81f79da",
+      "bytes": 481222,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/dc2f9834f14443118c7797f57e01a961/single_queries.csv": {
+      "sha256": "37ffbf8675c6b922237593ee591d561201546c9121a4f23a2aa5a6922f74f1ab",
+      "bytes": 422867,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/dff62000ae5b4a62b71e620ed8d8e298/adxl345_1.csv": {
+      "sha256": "495b48e5e1e6050734c73b0730727d0182c51e957ba2ee6dbebb8be266b65a2b",
+      "bytes": 4546400,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/dff62000ae5b4a62b71e620ed8d8e298/measurements.csv": {
+      "sha256": "50a8c87d1fbe56ecb087fa2211a440552dabccc30af2e7648679c63c3395046f",
+      "bytes": 491666,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/dff62000ae5b4a62b71e620ed8d8e298/single_queries.csv": {
+      "sha256": "e4000d3a84f9e7acd0e402a348ed62293c54cd638731de3c6d3d129995101db9",
+      "bytes": 424397,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/e66a275d2273428ba482c74ec67ce4ed/adxl345_1.csv": {
+      "sha256": "a9ba66a6012d67c8eeff2b7780ed6094fa091464ac58d68ea9eecf8128a6318c",
+      "bytes": 6734407,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/e66a275d2273428ba482c74ec67ce4ed/measurements.csv": {
+      "sha256": "e16886b1e7a1bb269e69040906e5accaf936103007d086a9056cd5640c562b7a",
+      "bytes": 730618,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/e66a275d2273428ba482c74ec67ce4ed/single_queries.csv": {
+      "sha256": "891e248a7f0f9c75627c6e0b02c78269869265a6d443be9b3595c45c1f536556",
+      "bytes": 637168,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/f4da874609b74a44bdd37a3c07525912/adxl345_1.csv": {
+      "sha256": "fd20a151b1998181686c94c29c52d850bcde4bb69331533d3bcf9600e04249d5",
+      "bytes": 4459568,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/f4da874609b74a44bdd37a3c07525912/measurements.csv": {
+      "sha256": "455a9920f908d7b521110a053ca4f51a3aa45e756b831d838ab0188547ecb008",
+      "bytes": 481987,
+      "lfs": true
+    },
+    "원본 수집 데이터/볼트_하중_보완원시/sessions/f4da874609b74a44bdd37a3c07525912/single_queries.csv": {
+      "sha256": "c9eb35bf8ba6632b98fc2b7f104e3707f203852f83dd49be021c110f960e8921",
+      "bytes": 422867,
+      "lfs": true
+    }
+  },
+  "environment": {
+    "python": "3.13.15",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.8.0"
+  },
+  "code_sha256": {
+    "__init__.py": "8f8801b1320b661158499d929a7b7211222e66e2ebb63ef9bd67b647360868f8",
+    "features.py": "bff3d3bd720b5b42d93ce8dc3e406a97b7b14576577974f5c8cb125d0ada7665",
+    "io.py": "65a6529c8d270bda5e3a40c800c7841492a5509aa028263ec4933afd9a770115",
+    "prepare.py": "7f2c13d128df4a8b190723861e1428e565612964616d32e2fc12c3c1489a5f48",
+    "schema.py": "1ae756368219aabf498fafa283f52b1a69e478cf64a6b2f7dc0d77b848c72e11",
+    "source.py": "2d9cf90f7f24321c43dac51325ccd0ae2180a0f04391844bdff2e124c9d985b6"
+  },
+  "files": {
+    "development.csv": "be40b93995d592298128a8b8ad3698a7224efb691eb5d5ffbc976c29ceca6d90",
+    "feature_parity.csv": "4e2663634949aaee0ab738c38d3e87ab06a05dd099910e1bc04297d320aea1a0",
+    "features.csv": "13680af6689f7c4cfbd67e8efd9594a705ea5849d3309630c338af5982552606",
+    "manifest.csv": "ba253e520c0cac271c18fa13f47845cb312445fce680780d9724ca953f1d58b0",
+    "quality.csv": "4d90b933a5a9806992665fa77ef01da73de4d6ad266903d5beba9e0b912f8a74",
+    "splits.csv": "01bc23c6c0361cd65b7f699d803b057308588fd99c89a7997524998779a5c70b",
+    "test.csv": "db2ad6716accab6d9d3b65ddc90c8b3df68ccdf91151a8884a2003571e7b8bb9"
+  },
+  "counts": {
+    "2026-11-06": {
+      "normal": 479,
+      "A121": 30,
+      "B82": 30,
+      "C182": 30
+    },
+    "2026-11-10": {
+      "normal": 80
+    },
+    "2026-11-11": {
+      "normal": 330,
+      "C182": 30,
+      "B82": 30,
+      "A121": 30
+    },
+    "2026-11-12": {
+      "B82": 30,
+      "normal": 30,
+      "C182": 30
+    }
+  },
+  "quality_counts": {
+    "valid": 1159
+  },
+  "parity_cycles": 1159,
+  "parity_max_abs_error": 0.0,
+  "training_executed": false,
+  "scope": "Retrospective; A121 has no final-test examples; previously analyzed historical data"
+}

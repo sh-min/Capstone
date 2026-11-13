@@ -1,0 +1,80 @@
+{
+  "run_id": "06c6924f19d8",
+  "selected": {
+    "id": "logistic_base24_C10",
+    "kind": "logistic",
+    "feature_set": "base24",
+    "parameters": {
+      "C": 10.0,
+      "max_iter": 2000,
+      "solver": "lbfgs",
+      "class_weight": "balanced",
+      "random_state": 20261113
+    }
+  },
+  "selected_development_metrics": {
+    "candidate_id": "logistic_base24_C10",
+    "threshold": 0.09,
+    "objective": 0.6227303040846883,
+    "date_macro_fpr": 0.38787272516395693,
+    "load_macro_date_recall": 0.6333333333333334
+  },
+  "baseline": {
+    "id": "logistic_base24_C1",
+    "kind": "logistic",
+    "feature_set": "base24",
+    "parameters": {
+      "C": 1.0,
+      "max_iter": 2000,
+      "solver": "lbfgs",
+      "class_weight": "balanced",
+      "random_state": 20261113
+    }
+  },
+  "baseline_development_metrics": {
+    "candidate_id": "logistic_base24_C1",
+    "threshold": 0.29,
+    "objective": 0.6127388182450813,
+    "date_macro_fpr": 0.3411890301765041,
+    "load_macro_date_recall": 0.5666666666666668
+  },
+  "n_development": 1069,
+  "n_training_valid": 1069,
+  "n_excluded": 0,
+  "test_date": "2026-11-12",
+  "test_used_for_selection": false,
+  "test_data_read": false,
+  "environment": {
+    "python": "3.13.15",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.8.0"
+  },
+  "fingerprints": {
+    "development": "be40b93995d592298128a8b8ad3698a7224efb691eb5d5ffbc976c29ceca6d90",
+    "config": "d2183d3c894d2657788de89d654a421a2ddc4af21016e599ddf3ce9ed98ac028",
+    "code": {
+      "__init__.py": "8f8801b1320b661158499d929a7b7211222e66e2ebb63ef9bd67b647360868f8",
+      "__main__.py": "1767b2e7416544e31923cc58f509bd22dd45c64294738f2651c6b9a3ec180e74",
+      "evaluate.py": "f261203d68d3a80374d46911ac695e3f87a0b60ff483de2a409b230dbe5184c5",
+      "features.py": "bff3d3bd720b5b42d93ce8dc3e406a97b7b14576577974f5c8cb125d0ada7665",
+      "io.py": "65a6529c8d270bda5e3a40c800c7841492a5509aa028263ec4933afd9a770115",
+      "metrics.py": "a6eee8efb9d02ca132eacb0d0d6d2f14d4fd3a327fa6d529489d7c6f5e9bfca7",
+      "model.py": "5ff78a32754ff6bb29c6764ff89f9df9193d446bedb3aa62adca7c8836397bdb",
+      "prepare.py": "7f2c13d128df4a8b190723861e1428e565612964616d32e2fc12c3c1489a5f48",
+      "schema.py": "1ae756368219aabf498fafa283f52b1a69e478cf64a6b2f7dc0d77b848c72e11",
+      "source.py": "2d9cf90f7f24321c43dac51325ccd0ae2180a0f04391844bdff2e124c9d985b6",
+      "train.py": "120de7bda2ba592c30a15fbd6c5767cb66561786e5967a947b8b0cd563310181"
+    }
+  },
+  "prepared_provenance_sha256": "a140b30da8555a753687f6f43950b6ad34eec8acd921c8e2b877da7a1192de50",
+  "artifacts": {
+    "model.joblib": "c68cf2f3d4c2d3880308fd4aee6a4f9c9c6534ee6e19854a105a11546248a789",
+    "baseline.joblib": "f3ca8122cb683bdf7c6f0fef6222f3f007681b637748ecf3a103304fa27f31d9"
+  },
+  "scope": "Retrospective development selection; final test has no A121 examples"
+}

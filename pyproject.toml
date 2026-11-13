@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capstone-xarm"
+version = "0.1.0"
+description = "Reproducible, offline xArm cycle-level load classification"
+requires-python = ">=3.13,<3.14"
+dynamic = ["dependencies"]
+
+[project.scripts]
+capstone = "capstone.__main__:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["capstone*"]
+
+[tool.setuptools.package-data]
+capstone = ["experiment.json"]

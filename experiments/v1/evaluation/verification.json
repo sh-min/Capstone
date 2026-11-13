@@ -1,0 +1,9 @@
+{
+  "model_sha256": "c68cf2f3d4c2d3880308fd4aee6a4f9c9c6534ee6e19854a105a11546248a789",
+  "test_sha256": "db2ad6716accab6d9d3b65ddc90c8b3df68ccdf91151a8884a2003571e7b8bb9",
+  "model_changed": false,
+  "threshold_changed": false,
+  "training_executed": false,
+  "frozen_score_replay_checked": true,
+  "A121_final_test_available": false
+}

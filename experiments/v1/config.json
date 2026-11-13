@@ -1,0 +1,33 @@
+{
+  "seed": 20261113,
+  "feature_sets": [
+    "base24",
+    "phase27"
+  ],
+  "logistic": {
+    "C": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "max_iter": 2000
+  },
+  "boosting": {
+    "max_leaf_nodes": [
+      7,
+      15
+    ],
+    "learning_rate": 0.05,
+    "max_iter": 200,
+    "min_samples_leaf": 10,
+    "l2_regularization": 1.0,
+    "early_stopping": false
+  },
+  "thresholds": {
+    "start": 0.0,
+    "stop": 1.0,
+    "step": 0.01
+  },
+  "selection": "0.5 * date_macro_specificity + 0.5 * load_macro_date_recall",
+  "tie_break": "lower FPR, logistic, base24, stronger regularization, higher threshold"
+}

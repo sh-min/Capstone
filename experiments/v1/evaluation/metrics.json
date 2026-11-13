@@ -1,0 +1,297 @@
+{
+  "selected": {
+    "n_total": 90,
+    "n_valid": 90,
+    "n_invalid": 0,
+    "coverage": 1.0,
+    "conditions": [
+      {
+        "label": "normal",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 13,
+        "alarm_rate": 0.43333333333333335,
+        "detected_fraction_of_all": null
+      },
+      {
+        "label": "A121",
+        "n_total": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "alarms": 0,
+        "alarm_rate": null,
+        "detected_fraction_of_all": null
+      },
+      {
+        "label": "B82",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 29,
+        "alarm_rate": 0.9666666666666667,
+        "detected_fraction_of_all": 0.9666666666666667
+      },
+      {
+        "label": "C182",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 30,
+        "alarm_rate": 1.0,
+        "detected_fraction_of_all": 1.0
+      }
+    ],
+    "objective": 0.775,
+    "date_macro_fpr": 0.43333333333333335,
+    "load_macro_date_recall": 0.9833333333333334,
+    "macro_f1": 0.8467896428130022,
+    "auc": {
+      "A121": null,
+      "B82": {
+        "auroc": 0.9488888888888889,
+        "average_precision": 0.9603235538411714
+      },
+      "C182": {
+        "auroc": 0.9877777777777779,
+        "average_precision": 0.9896824932185859
+      }
+    }
+  },
+  "matched_logistic": {
+    "n_total": 90,
+    "n_valid": 90,
+    "n_invalid": 0,
+    "coverage": 1.0,
+    "conditions": [
+      {
+        "label": "normal",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 10,
+        "alarm_rate": 0.3333333333333333,
+        "detected_fraction_of_all": null
+      },
+      {
+        "label": "A121",
+        "n_total": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "alarms": 0,
+        "alarm_rate": null,
+        "detected_fraction_of_all": null
+      },
+      {
+        "label": "B82",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 29,
+        "alarm_rate": 0.9666666666666667,
+        "detected_fraction_of_all": 0.9666666666666667
+      },
+      {
+        "label": "C182",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 30,
+        "alarm_rate": 1.0,
+        "detected_fraction_of_all": 1.0
+      }
+    ],
+    "objective": 0.8250000000000001,
+    "date_macro_fpr": 0.3333333333333333,
+    "load_macro_date_recall": 0.9833333333333334,
+    "macro_f1": 0.8671667900876825,
+    "auc": {
+      "A121": null,
+      "B82": {
+        "auroc": 0.9500000000000001,
+        "average_precision": 0.959673707258597
+      },
+      "C182": {
+        "auroc": 0.99,
+        "average_precision": 0.9908653353814645
+      }
+    }
+  },
+  "frozen_v4": {
+    "n_total": 90,
+    "n_valid": 90,
+    "n_invalid": 0,
+    "coverage": 1.0,
+    "conditions": [
+      {
+        "label": "normal",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 6,
+        "alarm_rate": 0.2,
+        "detected_fraction_of_all": null
+      },
+      {
+        "label": "A121",
+        "n_total": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "alarms": 0,
+        "alarm_rate": null,
+        "detected_fraction_of_all": null
+      },
+      {
+        "label": "B82",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 14,
+        "alarm_rate": 0.4666666666666667,
+        "detected_fraction_of_all": 0.4666666666666667
+      },
+      {
+        "label": "C182",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 27,
+        "alarm_rate": 0.9,
+        "detected_fraction_of_all": 0.9
+      }
+    ],
+    "objective": 0.7416666666666667,
+    "date_macro_fpr": 0.2,
+    "load_macro_date_recall": 0.6833333333333333,
+    "macro_f1": null,
+    "auc": {
+      "A121": null,
+      "B82": {
+        "auroc": 0.7411111111111112,
+        "average_precision": 0.7034113674733264
+      },
+      "C182": {
+        "auroc": 0.9022222222222221,
+        "average_precision": 0.898377239738085
+      }
+    }
+  },
+  "frozen_logistic": {
+    "n_total": 90,
+    "n_valid": 90,
+    "n_invalid": 0,
+    "coverage": 1.0,
+    "conditions": [
+      {
+        "label": "normal",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 3,
+        "alarm_rate": 0.1,
+        "detected_fraction_of_all": null
+      },
+      {
+        "label": "A121",
+        "n_total": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "alarms": 0,
+        "alarm_rate": null,
+        "detected_fraction_of_all": null
+      },
+      {
+        "label": "B82",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 23,
+        "alarm_rate": 0.7666666666666667,
+        "detected_fraction_of_all": 0.7666666666666667
+      },
+      {
+        "label": "C182",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 23,
+        "alarm_rate": 0.7666666666666667,
+        "detected_fraction_of_all": 0.7666666666666667
+      }
+    ],
+    "objective": 0.8333333333333334,
+    "date_macro_fpr": 0.1,
+    "load_macro_date_recall": 0.7666666666666667,
+    "macro_f1": 0.8041384107111806,
+    "auc": {
+      "A121": null,
+      "B82": {
+        "auroc": 0.9311111111111111,
+        "average_precision": 0.9288168539420054
+      },
+      "C182": {
+        "auroc": 0.9577777777777778,
+        "average_precision": 0.9547261642489036
+      }
+    }
+  },
+  "frozen_logistic_040": {
+    "n_total": 90,
+    "n_valid": 90,
+    "n_invalid": 0,
+    "coverage": 1.0,
+    "conditions": [
+      {
+        "label": "normal",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 6,
+        "alarm_rate": 0.2,
+        "detected_fraction_of_all": null
+      },
+      {
+        "label": "A121",
+        "n_total": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "alarms": 0,
+        "alarm_rate": null,
+        "detected_fraction_of_all": null
+      },
+      {
+        "label": "B82",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 26,
+        "alarm_rate": 0.8666666666666667,
+        "detected_fraction_of_all": 0.8666666666666667
+      },
+      {
+        "label": "C182",
+        "n_total": 30,
+        "n_valid": 30,
+        "n_invalid": 0,
+        "alarms": 28,
+        "alarm_rate": 0.9333333333333333,
+        "detected_fraction_of_all": 0.9333333333333333
+      }
+    ],
+    "objective": 0.8500000000000001,
+    "date_macro_fpr": 0.2,
+    "load_macro_date_recall": 0.9,
+    "macro_f1": 0.8486164325244784,
+    "auc": {
+      "A121": null,
+      "B82": {
+        "auroc": 0.9311111111111111,
+        "average_precision": 0.9288168539420054
+      },
+      "C182": {
+        "auroc": 0.9577777777777778,
+        "average_precision": 0.9547261642489036
+      }
+    }
+  }
+}

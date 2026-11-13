@@ -1,0 +1,7 @@
+reference,condition,n,selected_only,reference_only,both,neither
+matched_logistic,normal,30,4,1,9,16
+matched_logistic,loads,60,0,0,59,1
+frozen_logistic,normal,30,10,0,3,17
+frozen_logistic,loads,60,13,0,46,1
+frozen_logistic_040,normal,30,7,0,6,17
+frozen_logistic_040,loads,60,5,0,54,1
